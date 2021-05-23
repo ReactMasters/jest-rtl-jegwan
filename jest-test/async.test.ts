@@ -5,7 +5,6 @@ interface User {
 }
 function fetchUser(id: number, cb: (user: User) => void) {
   setTimeout(() => {
-    console.log("wait 0.1 sec.");
     const user = {
       id: id,
       name: "User" + id,
@@ -29,7 +28,6 @@ test("fetch a user", (done) => {
 function promiseFetchUser(id: number) {
   return new Promise((resolve) => {
     setTimeout(() => {
-      console.log("wait 0.1 sec.");
       const user = {
         id: id,
         name: "User" + id,

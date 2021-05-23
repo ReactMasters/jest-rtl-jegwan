@@ -107,6 +107,7 @@ typings/
 
 # dotenv environment variables file
 .env
+.env.js
 .env.test
 .env*.local
 
