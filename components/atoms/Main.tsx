@@ -1,4 +1,4 @@
-import stc from "@styles/constants";
+import stc from "@app/styles/constants";
 import styled from "styled-components";
 
 const Main = styled.main`

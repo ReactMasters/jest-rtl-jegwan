@@ -1,5 +1,5 @@
-import Main from "@components/atoms/Main";
-import Section from "@components/atoms/Section";
+import Main from "@app/components/atoms/Main";
+import Section from "@app/components/atoms/Section";
 import { Container } from "next/app";
 
 interface HomePageProps {}

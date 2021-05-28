@@ -26,9 +26,7 @@ module.exports = {
   // coverageDirectory: undefined,
 
   // An array of regexp pattern strings used to skip coverage collection
-  // coveragePathIgnorePatterns: [
-  //   "/node_modules/"
-  // ],
+  // coveragePathIgnorePatterns: ["/node_modules/"],
 
   // Indicates which provider should be used to instrument code for coverage
   // coverageProvider: "babel",
@@ -78,10 +76,7 @@ module.exports = {
   moduleNameMapper: {
     "\\.(css|less|sass|scss)$": "identity-obj-proxy",
     "\\.(gif|ttf|eot|svg|png)$": "<rootDir>/test/__mocks__/fileMock.js",
-    "@components/(.*)": "<rootDir>/components/$1",
-    "@lib/(.*)": "<rootDir>/lib/$1",
-    "@styles/(.*)": "<rootDir>/styles/$1",
-    "@pages/(.*)": "<rootDir>/pages/$1",
+    "@app/(.*)": "<rootDir>/$1",
   },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
@@ -151,7 +146,10 @@ module.exports = {
   // ],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
-  testPathIgnorePatterns: ["<rootDir>[/\\\\](node_modules|.next)[/\\\\]"],
+  testPathIgnorePatterns: [
+    "<rootDir>[/\\\\](node_modules|.next)[/\\\\]",
+    "<rootDir>/test/ignore/",
+  ],
   // testPathIgnorePatterns: [
   //   "/node_modules/"
   // ],
